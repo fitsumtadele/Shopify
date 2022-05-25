@@ -1,0 +1,73 @@
+<div class="header header-sticky">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3">
+                <div class="logo">
+                    <a href="">
+                        <h2 style="color:#fff">Fitsum shops</h2>
+                    </a>
+                </div>
+                <div class="mobile-only-icon">
+                    <div class="container" class="icon"
+                    [ngClass]="isMenuOpen ? 'open' : 'closed'"
+                     (click)="openMenu()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                      </div>
+                    
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
+                <ul class="header-right f-right   d-flex justify-content-between">
+                    <li class="">
+                        <div class="form-box f-right ">
+                            <input type="text" name="Search" placeholder="Search products" (keyup)="onKeyUp($event)" (click)="onClick($event)">
+                            <div class="search-icon">
+                                <i class="fas fa-search special-tag"></i>
+                            </div>
+                        </div>
+                        <div class="dropdown" *ngIf = "options.length>0">
+                            <option class="dropdown-option" *ngFor ="let option of options" (click)="goTopage(option)">{{option}}</option>
+                        </div>
+                        
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-xl-5 col-lg-7 col-md-6 col-sm-5">
+                <div class="main-menu f-right d-none d-lg-block">
+                    <nav>
+                        <ul id="navigation">
+                            <li><a routerLink="/about-us">About</a></li>
+                            <li><a routerLink="/contact-us">Contact</a></li>
+                            <li><a routerLink="/buisness">Buisness with us</a></li>
+                         <li  ><a routerLink="/donate-now">Donate Here</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>      
+    </div>
+
+</div>
+
+
+<div *ngIf="isMenuOpen" class="headerMenu"  [ngClass]="isMenuOpen? 'open':'closed'">
+    <div class="Menu-heading">
+        <span> Menu </span>   
+        <hr class="mb-0">
+     </div>
+
+     <div class="Menus">
+        <nav>
+            <ul id="navigation" >
+                <li (click)="openMenu()"><a routerLink="/about-us">About</a></li>
+                <li  (click)="openMenu()"><a routerLink="/contact-us">Contact</a></li>
+                <li  (click)="openMenu()"><a routerLink="/buisness">Buisness with us</a></li>
+                <li  (click)="openMenu()"><a routerLink="/donate-now">Donate Now</a></li>
+            </ul>
+        </nav>
+     </div>
+ </div>
