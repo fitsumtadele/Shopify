@@ -1,6 +1,10 @@
 main {
     padding-top: 60px
 }
+.slide{
+    height: 500px;
+    width: fit-content;
+}
 
 .slick-slider {
     width: 100%;
