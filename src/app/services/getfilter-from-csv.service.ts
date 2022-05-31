@@ -11,7 +11,7 @@ export class GetfilterFromCSVService {
   constructor(private http: HttpClient) { }
 
   public getCookerFilter(): Observable<any> {
-    const id = "10xN7JKMC8sxoDM03J5dLq9DFyQPgeVSD2jOWafjw1-k"
+    const id = "1Adeb_2GqkWG4YMm8inumMZzHvcRjNDRtN-fbnooqARc"
     const url = `https://spreadsheets.google.com/feeds/list/${id}/od6/public/values?alt=json`;
 
     return this.http.get(url)

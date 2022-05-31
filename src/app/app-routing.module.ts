@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutUsComponent } from './extra/about-us/about-us.component';
 import { BuinessComponent } from './extra/buiness/buiness.component';
 import { ContactUsComponent } from './extra/contact-us/contact-us.component';
-import { DonateNowComponent } from './extra/donate-now/donate-now.component';
 import { Notfound404Component } from './extra/notfound404/notfound404.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
@@ -20,7 +19,6 @@ const routes: Routes = [
   {path:'about-us',component:AboutUsComponent},
   {path:'buisness',component:BuinessComponent},
   {path:'contact-us',component:ContactUsComponent},
-  {path:'donate-now', component:DonateNowComponent},
    {path:'cooker', component:CookerComponent},
    {path:'mixer', component:MixerComponent},
    {path:'stove', component:StoveComponent},

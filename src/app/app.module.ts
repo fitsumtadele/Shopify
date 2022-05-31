@@ -24,8 +24,6 @@ import { Notfound404Component } from './extra/notfound404/notfound404.component'
 import { RelatedProductComponent } from './extra/related-product/related-product.component';
 import { AboutUsComponent } from './extra/about-us/about-us.component';
 import { BuinessComponent } from './extra/buiness/buiness.component';
-import { DonateNowComponent } from './extra/donate-now/donate-now.component';
-import { GetQuoteComponent } from './extra/get-quote/get-quote.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,9 +42,7 @@ import { GetQuoteComponent } from './extra/get-quote/get-quote.component';
     Notfound404Component,
     RelatedProductComponent,
     AboutUsComponent,
-    BuinessComponent,
-    DonateNowComponent,
-    GetQuoteComponent
+    BuinessComponent
   ],
   imports: [
     BrowserModule,
